@@ -20,11 +20,25 @@
     </header>
     <main>
         <section class="container_obtener">
-            <article class = "inicio" >
-                <input type="text" class="innombre" required="required">
-                <label class="label-nombre">Nombre</label>
-            </article><!--informacion-->
+            <article class="inicio">
+                <form action="#" class="formulario">
+                    <div class="input-group">
+                        <input type="text" name="ob_nombre" id="ob_nombre" placeholder="NOMBRE" required>
+                        <input type="text" name="ob_apellidos" id="ob_apellidos" placeholder="APELLIDOS" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" name="ob_telefono" id="ob_telefono" placeholder="NÚMERO DE TELÉFONO" pattern="[0-9]{10}" title="Por favor, ingresa un número de teléfono válido de 10 dígitos" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="ob_email" id="ob_email" placeholder="CORREO ELECTRÓNICO" required>
+                    </div>
+                    <div class="requerido-texto">Los campos marcados con * son obligatorios</div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
         </section>
+        
+        
     </main>
     <footer>
         <a href="https://www.facebook.com/profile.php?id=61558521802934&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
