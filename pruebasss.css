@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+h1 {
+    padding-left: 80%;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    text-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+}
+header {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav_item:hover{
+    text-decoration: underline;
+    
+}
+.nav_item{
+    display: inline-block;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background: url(img/inicio.jpg) center;
+    background-size: cover;
+    height: 80vh;
+
+}
+.inicio{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: large;
+    background-color: black;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+i{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+p{
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+}
+
+/*obtener.html*/
+.container_obtener{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background: url(img/obtener.jpg) center;
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Media Query para pantallas de hasta 768px de ancho (tabletas) */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center; /* Centra el texto en tabletas */
+    }
+
+    nav {
+        text-align: center; /* Centra los enlaces en tabletas */
+    }
+
+    section {
+        flex-direction: column; /* Cambia a disposición de columna en tabletas */
+    }
+}
+
+/* Media Query para pantallas de hasta 576px de ancho (celulares) */
+@media screen and (max-width: 576px) {
+
+    nav {
+        font-size: medium; /* Reducir el tamaño de fuente del menú en celulares */
+    }
+    h2{
+        font-size: medium;
+    }
+    p{
+        font-size:medium;
+    }
+    .container{ 
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+}
+/* Media Query para pantallas de PC */
+@media screen and (min-width: 769px) {
+    /* Aquí podrías agregar estilos específicos para pantallas de PC si es necesario */
+}

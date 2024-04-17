@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+h1 {
+    padding-left: 20%;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+    font-size: 80px;
+}
+header {
+    display: flex;
+    text-align: center;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav_item:hover{
+    text-decoration: underline;
+    
+}
+.nav_item{
+    display: inline-block;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+
+.container{ 
+    display: grid;
+    grid-template-columns: 1fr ;
+    background: url(img/inicio.jpg) center;
+    background-size: cover;
+    height: 80vh;
+
+}
+.inicio{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: large;
+
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+i{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+}
+.texto{
+    text-transform: uppercase;
+    text-shadow: 0 0 5px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 60px white;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif
+}
+
+.obtener{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(50, 107, 107);
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Oswald', sans-serif
+}
+.obtener:hover{
+    background-color: rgb(47, 101, 101);
+}
+.obtener:active{
+    background-color: rgb(43, 92, 92);
+}
+.pie{
+    color: white;
+}
+/*obtener.html*/
+.container_obtener{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background: url(img/obtener.jpg) center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.innombre{
+    padding: 0.6rem 1.2rem;
+    color: black;
+    font-size: 1.5rem;
+}
+.label-nombre{
+    top: 10px;
+    left: 10px;
+    color: black;
+    transition: 0.4s all;
+    padding-inline: 0.25rem;
+}
+.innombre:focus~.label-nombre,
+.innombre:valid~.label-nombre{
+    top: -0.5rem;
+    left: 0.5rem;
+    background-color: white;
+    font-size: 1rem;
+}
+/* Media Query para pantallas de hasta 768px de ancho (tabletas) */
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center; /* Centra el texto en tabletas */
+    }
+
+    nav {
+        text-align: center; /* Centra los enlaces en tabletas */
+    }
+
+    section {
+        flex-direction: column; /* Cambia a disposición de columna en tabletas */
+    }
+}
+
+/* Media Query para pantallas de hasta 576px de ancho (celulares) */
+@media screen and (max-width: 576px) {
+
+    .container{ 
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+}
+
+/* Media Query para pantallas de PC */
+@media screen and (min-width: 769px) {
+    /* Aquí podrías agregar estilos específicos para pantallas de PC si es necesario */
+}
