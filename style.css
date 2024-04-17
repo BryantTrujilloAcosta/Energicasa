@@ -7,12 +7,10 @@ body, html {
 h1 {
     padding-left: 20%;
     color: black;
-    font-family: 'Oswald', sans-serif;
 }
 h2{
     text-transform: uppercase;
     color: white;
-    font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 5px white,
     0 0 25px white,
     0 0 50px white,
@@ -32,7 +30,6 @@ header {
 nav {
     display: flex;
     justify-content: flex-start;
-    font-family: 'Oswald', sans-serif;
     font-size: x-large;
     align-items: center;
     gap: 20px;
@@ -64,8 +61,8 @@ li{
 
 }
 .inicio{
-    font-family: 'Oswald', sans-serif;
     text-align: center;
+    justify-content: center;
     color: white;
     font-size: large;
 
@@ -89,7 +86,6 @@ i{
     0 0 30px white,
     0 0 60px white;
     font-size: 60px;
-    font-family: 'Oswald', sans-serif
 }
 
 .obtener{
@@ -102,7 +98,6 @@ i{
     text-transform: uppercase;
     font-size: xx-large;
     text-align: center;
-    font-family: 'Oswald', sans-serif
 }
 .obtener:hover{
     background-color: rgb(47, 101, 101);
@@ -115,32 +110,63 @@ i{
 }
 /*obtener.html*/
 .container_obtener{ 
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
+    display: flex;
+    grid-template-columns: 1fr;
     background: url(img/obtener.jpg) center;
     background-size: cover;
     height: 80vh;
+    justify-content: center;
+}
+.inicio_obtener{
+    width: 300px;
+    margin-top: 150px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.input-group input {
+    background-color: rgba(53, 53, 54, 0.8);
+    padding: 20px;
+    border: none;
+    margin-left: 30PX;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    font-size: xx-large;
+    color: white;
+}
+.input-group input:last-child {
+    margin-bottom: 0; /* Para eliminar el margen inferior del último input en cada grupo */
+}
+.input-group input:invalid {
+    border: 2px solid red;
 }
 
-.innombre{
-    padding: 0.6rem 1.2rem;
-    color: black;
-    font-size: 1.5rem;
+/* Texto de aviso para campos obligatorios */
+.requerido-texto {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
-.label-nombre{
-    top: 10px;
-    left: 10px;
-    color: black;
-    transition: 0.4s all;
-    padding-inline: 0.25rem;
+/* Estilo para el botón de envío */
+.formulario button[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntando */
+    transition: background-color 0.3s; /* Transición suave de color de fondo */
+    font-size: x-large;
+    
 }
-.innombre:focus~.label-nombre,
-.innombre:valid~.label-nombre{
-    top: -0.5rem;
-    left: 0.5rem;
-    background-color: white;
-    font-size: 1rem;
+
+/* Cambio de estilo al pasar el ratón por encima */
+.formulario button[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo verde oscuro */
 }
+
 /* Media Query para pantallas de hasta 768px de ancho (tabletas) */
 @media screen and (max-width: 768px) {
     header {
@@ -169,4 +195,5 @@ i{
 /* Media Query para pantallas de PC */
 @media screen and (min-width: 769px) {
     /* Aquí podrías agregar estilos específicos para pantallas de PC si es necesario */
+    
 }
