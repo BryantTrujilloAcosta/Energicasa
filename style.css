@@ -1,29 +1,41 @@
-body, html {
+
+body{
+    background-color: #2f2b2b;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
-h1 {
-    padding-left: 20%;
-    color: black;
-}
-h2{
-    text-transform: uppercase;
+
+/* ------------------------FOOTER-------------------------------------- */
+footer{
+    text-align: center;
     color: white;
-    text-shadow: 0 0 5px white,
-    0 0 25px white,
-    0 0 50px white,
-    0 0 100px white;
-    font-size: 80px;
+    font-size: small;
+    width: 100%;
+    height: 10px;
 }
+/* ------------------------END-FOOTER-------------------------------------- */
+
+/* -----------------------HEADER---------------- */
 header {
     display: flex;
-    text-align: center;
-    background-color: white;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    position: fixed;
+    position: relative;
+    
+}
+
+.energicasa{
+    padding-left: 20%;
+    color: black;
 }
 
 nav {
@@ -51,36 +63,29 @@ li{
     list-style: none;
 }
 
-.container{ 
-    display: grid;
-    background: url(img/inicio.jpg) center;
-    background-size: cover;
-    height: 80vh;
-
-}
-.inicio{
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-size: large;
-
-}
-
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: small;
-    width: 100%;
-    height: 10px;
-}
 i{
     text-align: center;
     font-size: 20px;
     color: white;
     padding: 15px;
 }
-.texto{
+/* ------------------------END-HEADER-------------------------- */
+
+/* ------------------------CONTAINER --------------------------*/
+.container{ 
+    display: grid;
+    background: url(img/inicio.jpg) center;
+    background-size: cover;
+    height: 100vh;
+}
+.inicio{
+    text-align: center;
+    color: white;
+    font-size: large;
+
+}
+.texto {
+    margin-top: 300px;
     text-transform: uppercase;
     text-shadow: 0 0 5px white,
     0 0 20px white,
@@ -88,7 +93,6 @@ i{
     0 0 60px white;
     font-size: 60px;
 }
-
 .obtener{
     padding: 10px 20px;
     color: white;
@@ -106,93 +110,338 @@ i{
 .obtener:active{
     background-color: rgb(43, 92, 92);
 }
+/* ------------------------END-CONTAINER -------------------------------*/
 
-/*obtener.html*/
-.container_obtener{ 
-    display: flex;
-    grid-template-columns: 1fr;
-    background: url(img/obtener.jpg) center;
+/* --------------------------CONTAINER1 -------------------------------*/
+.encabezado1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    
+}
+.texto1{
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+/* ------------------------END-CONTAINER1-------------------------------*/
+
+/* --------------------------CONTAINER2---------------------------------*/
+.container2{
+    color: white;
+    display: grid;
+    background: url(img/encabezado.jpg);
     background-size: cover;
-    height: 80vh;
-    justify-content: center;
+    height: 100vh;
+    text-shadow: 1px 1px 0 black, 
+    -1px 1px 0 black, 
+    1px -1px 0 black, 
+    -1px -1px 0 black; 
 }
-.inicio_obtener{
-    width: 300px;
-    margin-top: 150px;
-}
-.formulario{
-    display: flex;
-    flex-direction: column;
-}
-.input-group input {
-    background-color: rgba(53, 53, 54, 0.8);
-    padding: 20px;
-    border: none;
-    margin-left: 30PX;
-    border-radius: 10px;
-    margin-bottom: 5px;
+.encabezado2{
+    text-transform: uppercase;
     margin-top: 100px;
-    font-size: xx-large;
+    text-align: center;
+    font-size: 50px;
+}
+
+.texto2{
+    text-align: justify;
+    font-size: 30px;
+    padding: 50px;
+    margin-bottom: 1000px;
+}
+
+/* --------------------------END-CONTAINER2---------------------------------*/
+
+/* --------------------------CONTAINER3------------------------------------*/
+.container3{
     color: white;
 }
-.input-group input:last-child {
-    margin-bottom: 0; /* Para eliminar el margen inferior del último input en cada grupo */
+.encabezado3{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
 }
-.input-group input:invalid {
-    border: 2px solid red;
+.texto3{
+    padding: 50px;
+    text-align: justify;
+    font-size: 30px;
 }
+.img_container3_1{
+    width: 450px;
+    height: 400px;
+    border-radius: 60px;
+    
+}
+.img_container3_2{
+    width: 500px;
+    height: 400px;
+    border-radius: 60px;
+}
+.container_img{
+    display: flex;
+    justify-content: space-around;
+}
+/* --------------------------END-CONTAINER3------------------------------------*/
 
-/* Texto de aviso para campos obligatorios */
-.requerido-texto {
-    color: red;
-    font-size: 0.8em;
-    margin-top: 5px;
+/* --------------------------------MATERIALES.HTML----------------------*/
+/* -------------------TITULO-H2-------------------------------------- */
+.material_sub{
+    text-transform: uppercase;
+    color:white;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    text-align: center;
+    font-size: 50px;
 }
-/* Estilo para el botón de envío */
-.formulario button[type="submit"] {
-    background-color: #4CAF50; /* Color de fondo verde */
-    color: white; /* Color del texto blanco */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cursor apuntando */
-    transition: background-color 0.3s; /* Transición suave de color de fondo */
-    font-size: x-large;
+/* ------------------------------CONTAINER DE LAS CARDS------------------- */
+.container_es {
+    display: flex;
+    justify-content: center; 
+    padding: 50px;
+    
+}
+/* ------------------TAMAÑO DE LAS CARDS----------------------- */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 320px;
+    border-radius: 16px;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 50px;
+    margin-bottom: 100px;
+    
+}
+/* ----------------IMAGEN DE LAS CARDS---------------------- */
+.cards{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 16px 16px 0 0;
+}
+/* ----------------CONTENIDO DENTRO DE ELLAS-------------------------- */
+.content{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: justify;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+}
+/* --------------------------------END-MATERIALES.HTML----------------------*/
+/* -----------------------------CONTACTAR.HTML------------------------------- */
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
     
 }
 
-/* Cambio de estilo al pasar el ratón por encima */
-.formulario button[type="submit"]:hover {
-    background-color: #45a049; /* Color de fondo verde oscuro */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Media Query para pantallas de hasta 768px de ancho (tabletas) */
-@media screen and (max-width: 768px) {
-    header {
-        text-align: center; /* Centra el texto en tabletas */
-    }
 
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    color: #ddd9d9;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+    padding-top: 70px;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: url(img/Contactanos.jpg)center;
+    background-size: cover;
+    height: 80vh;
+}
+/* -----------------------------END-CONTACTAR.HTML------------------------------- */
+
+
+
+
+
+
+/* Media Query para pantallas de hasta 700px de ancho */
+@media screen and (max-width: 700px) {
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        flex-direction: column;
+        text-align: justify;
+    }
+    .energicasa{
+        padding: 0;
+        margin: 1em;
+    }
+    body,div,ul,nav,header,footer,a,li,label{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        max-width: 100%;
+        
+    }
     nav {
-        text-align: center; /* Centra los enlaces en tabletas */
+        gap: 0px;
+        text-align: center;
+        font-size: small;
+        padding: 0px;
+        max-width: 100%;
+        margin: 0;
+    }
+    /* ----------------------------CONTAINER--------------------------- */
+    .container{
+        height: 90vh;
+    }
+    .texto{
+        font-size: 30px;
+    }
+    
+    .obtener_2{
+        margin-top: 200px;
+    }
+    .obtener{
+        font-size: x-large;
+    }
+    /* ----------------------------END-CONTAINER--------------------------- */
+    
+    /* ----------------------------CONTAINER1--------------------------- */
+    .encabezado1,.encabezado2,.encabezado3{
+        padding-top:30px;
+        font-size:30px ;
+    }
+    .texto1,.texto2,.texto3{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 70px;
+        padding: 10px;
+    }
+    /* ----------------------------END-CONTAINER1--------------------------- */
+    /* ----------------------------CONTAINER2--------------------------- */
+    .container3{
+        background: fixed;
+    }
+    /* ----------------------------END-CONTAINER2--------------------------- */
+    /* ----------------------------CONTAINER3--------------------------- */
+    .img_container3_1{
+        width: 250px;
+        height: 200px;
+        
+    }
+    .img_container3_2{
+        width: 300px;
+        height: 200px;
+        border-radius: 60px;
+    }
+    .container_img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ----------------------------END-CONTAINER3--------------------------- */
+    .container_es{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .material_sub{
+        margin-top: 20px;
+        font-size: 30px;
+        
+    }
+    .card{
+        justify-content: center;
+        width: 300px;
+        height: 400px;
+        border: 16px 16px 0 0;
+        margin: 0;
+        padding: 20px;
+        margin-top: 130px;
+    
     }
 
-    section {
-        flex-direction: column; /* Cambia a disposición de columna en tabletas */
-    }
-}
 
-/* Media Query para pantallas de hasta 576px de ancho (celulares) */
-@media screen and (max-width: 576px) {
-
-    .container{ 
-        display: grid;
+    /* ----------------CONTACTAR.HTML--------------------------------- */
+    .contact-wrapper{
         grid-template-columns: 1fr ;
     }
-
-}
-
+    .contact-info{
+        height: 40vh;
+    }
+    /* ----------------END-CONTACTAR.HTML--------------------------------- */
 /* Media Query para pantallas de PC */
-@media screen and (min-width: 769px) {
-    /* Aquí podrías agregar estilos específicos para pantallas de PC si es necesario */
-    
 }
