@@ -77,6 +77,8 @@ i{
     background: url(img/inicio.jpg) center;
     background-size: cover;
     height: 100vh;
+    
+    
 }
 .inicio{
     text-align: center;
@@ -85,7 +87,7 @@ i{
 
 }
 .texto {
-    margin-top: 300px;
+    margin-top: 200px;
     text-transform: uppercase;
     text-shadow: 0 0 5px white,
     0 0 20px white,
@@ -93,6 +95,7 @@ i{
     0 0 60px white;
     font-size: 60px;
 }
+
 .obtener{
     padding: 10px 20px;
     color: white;
@@ -363,15 +366,14 @@ ul {
     }
     /* ----------------------------CONTAINER--------------------------- */
     .container{
+        display: flex;
+        justify-content: center;
         height: 90vh;
     }
     .texto{
         font-size: 30px;
     }
     
-    .obtener_2{
-        margin-top: 200px;
-    }
     .obtener{
         font-size: x-large;
     }
